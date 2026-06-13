@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:rgb(39, 45, 81);
+        }
+        .top{
+            height: 30vh;
+            width: 100%;
+            margin-top: 5vh;
+            margin-bottom:5vh;
+            background-color: rgb(39, 45, 81);
+            border-radius: 30px;
+            
+        }
+        .bottom{
+            height: 30vh;
+            width: 100vw;
+            background-color: rgb(39, 45, 81);
+        }
+        .mid{
+            height: 30vh;
+            width: 100vw;
+            margin-bottom:5vh;
+            background-color:rgb(39, 45, 81);
+        }
+        .navbar{
+            display: flex;
+            width: 100vw;
+            text-align: center;
+            background-color: rgb(5, 5, 5);
+            color: #F8FAFC;
+        }
+        .navbar h1{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        img{
+            height: 75px;
+            width: 75px;
+        }
+        .left{
+            width: 55vw;
+            height: 30vh;
+            background: radial-gradient(circle,skyblue,#1e0275);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            margin-right: 4vw;
+            color: #1c0366;
+        }
+        .right{
+            border-radius: 25px;
+            background: radial-gradient(
+            circle,
+            pink,
+            #1e0275
+);
+        }
+        
+        .top{
+            display: flex;
+        }
+        .bottom{
+            display: flex;
+        }
+        .mid{
+            display: flex;
+        }
+        .right{
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            height: 7vh;
+            width: 20vw;
+            border-radius: 20px;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            background: linear-gradient(90deg, #b0acfd, #3a3de6);
+            color: rgb(46, 2, 32);
+            font-size: 20px;
+        }
+        .left{
+border-radius: 25px;
+        }
+        button{
+    height:7vh;
+    width:20vw;
+    border-radius:20px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+@media(max-width:768px){
+
+    .top,
+    .mid,
+    .bottom{
+        flex-direction:column;
+        align-items:center;
+        height:auto;
+        gap:20px;
+    }
+
+    .left{
+        width:90%;
+        margin-right:0;
+        height:180px;
+    }
+
+    .right{
+        width:90%;
+        padding:20px 0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    button{
+               width:200px;
+        height:45px;
+        font-size:14px;
+        margin:8px 0;
+
+    }
+
+    .navbar{
+        justify-content:center;
+    }
+
+    .navbar h1{
+        font-size:28px;
+    }
+
+    img{
+        width:60px;
+        height:60px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+            <img src="logo.jpeg">
+            <h1>PatternX</h1>
+        </div>
+    <div class="top all">
+        <div class="left">
+        <h1>Level 1</h1>
+        <h1>Easy</h1>           
+        </div>
+        <div class="right">
+            <br>
+            <a href="EasyStar.html"><button id="Star">⭐Palying With Star</button><br><br></a>
+            
+            <a href="EasyNumber.html"><button class="number">🔢Playing With Number</button><br><br></a>
+            <a href="EasyAlphabet.html"><button class="alphabate">🔤Playing With Alphabate</button><br></a>
+        </div>
+
+    </div>
+    <div class="mid all">
+        <div class="left">
+        <h1>Level 2</h1>
+        <h1>Medium</h1>           
+        </div>
+        <div class="right all">
+            <br>
+            <a href="mediumStar.html"><button id="Star">⭐Palying With Star</button><br><br></a>
+            
+            <a href="mediumNumber.html"><button class="number">🔢Playing With Number</button><br><br></a>
+            <a href="mediumAlphabet.html"><button class="alphabate">🔤Playing With Alphabate</button><br></a>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <div class="left">
+        <h1>Level 3</h1>
+        <h1>Hard</h1>           
+        </div>
+        <div class="right">
+            <br>
+            <a href="hardStar.html"><button id="Star">⭐Palying With Star</button><br><br></a>
+            
+            <a href="hardNumber.html"><button class="number">🔢Playing With Number</button><br><br></a>
+            <a href="HardAlphabet.html"><button class="alphabate">🔤Playing With Alphabate</button><br></a>
+        </div>
+
+    </div>
+</body>
+</html>

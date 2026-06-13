@@ -1,0 +1,197 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #344263;
+        }
+        img{
+            height: 75px;
+            width: 75px;
+        }
+        .navbar{
+            display: flex;
+            
+            text-align: center;
+            background-color: rgb(7, 7, 7);
+            color: antiquewhite;
+        }
+        .navbar h1{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .card{
+            height: 75vh;
+            width: 30vw;
+            background-color:  #1E293B;
+            border:3px solid rgb(46, 115, 131);
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 40px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+            overflow-x: auto;
+            transition: 0.5s ease;
+    white-space: nowrap;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+        }
+        .card:hover{
+        transform: translate(5px,-5px);
+}
+        .card h2{
+            color: antiquewhite;
+            margin-top: 10px;
+        }
+        .pat{
+            display: flex;
+        }
+        button{
+            height: 40px;
+            width: 120px;
+            border-radius: 25px;
+            background-color: #6e4b6e;
+            color: white;;
+            margin-top: 20px;
+            margin-right: 20px;
+            transition: 0.5s ease;
+            box-shadow: 10px 10px 10px #0f0f10;;
+        }
+        button:hover{
+            transform: translate(3px,-3px);
+        }
+        .pattren{
+            font-size: 20px;
+            margin-top: 20px;
+            color: antiquewhite;
+            font-family: monospace;
+            width: 20vw;
+            
+        }
+        input{
+            height: 30px;
+            width: 40px;
+            font-size: 20px;
+            margin-right: 25px;
+            background-color: bisque;
+            border-radius: 10px;
+            color:#6e4b6e;
+        }
+        .link a{
+            color: antiquewhite;
+        }
+        .link{
+            color: antiquewhite;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+        /* Tablet */
+@media (max-width: 1024px) {
+
+    .pat{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card{
+        width: 45vw;
+        height: auto;
+        min-height: 60vh;
+    }
+
+    .pattren{
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar h1{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .link{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .pat{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+        height: auto;
+        min-height: 50vh;
+        margin-top: 20px;
+    }
+
+    .pattren{
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .btns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    button{
+        width: 100px;
+        margin-right: 0;
+    }
+
+    input{
+        width: 60px;
+        margin-right: 0;
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .card h2{
+        font-size: 18px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .pattren{
+        font-size: 14px;
+    }
+
+    button{
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    input{
+        width: 50px;
+        font-size: 16px;
+    }
+
+    .navbar h1{
+        font-size: 24px;
+    }
+}
