@@ -112,14 +112,17 @@
 @media (max-width: 768px) {
 
     .navbar{
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .navbar h1{
-        justify-content: center;
-        margin-bottom: 10px;
-    }
+            display: flex;
+            width: 100vw;
+            text-align: center;
+            background-color: rgb(5, 5, 5);
+            color: #F8FAFC;
+        }
+        .navbar h1{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
 
     .link{
         margin-left: 10px;
